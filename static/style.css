@@ -1,0 +1,87 @@
+html {
+    background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 50%, #fbc2eb 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #f4f4f4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    width: 100%;
+}
+
+.example_a {
+    border: none;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.example_a:hover {
+    background-color: #45a049;
+}
+
+.output-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background: #4CAF50;
+    color: white;
+}
+
+.highlight {
+    color: #FF5722;
+    font-weight: bold;
+}

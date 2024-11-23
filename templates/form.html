@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>{{ title }} Sentiment Analysis</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <h1>Sentiment Analyzer using Machine Learning</h1>
+        </header>
+        <main>
+            <form method="POST">
+                <textarea name="text1" placeholder="Type something for sentiment analysis..." rows="10" cols="109"></textarea>
+                <br><br>
+                <input class="example_a" type="submit" value="Analyze Sentiment">
+            </form>
+            
+            {% if final %}
+            <div class="output-section">
+                <h2>Analysis Result</h2>
+                <p>The sentiment of: <b>'{{ text1 }}'</b> is <span class="highlight">{{ final * 100 }}%</span> positive!</p>
+                <h3>Score Table</h3>
+                <table>
+                    <tr>
+                        <th>Sentiment Metric</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>Positive</td>
+                        <td>{{ text2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Neutral</td>
+                        <td>{{ text3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Negative</td>
+                        <td>{{ text5 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Compound</td>
+                        <td>{{ text4 }}</td>
+                    </tr>
+                </table>
+            </div>
+            {% else %}
+            <p>Please enter text to analyze.</p>
+            {% endif %}
+        </main>
+    </body>
+</html>
